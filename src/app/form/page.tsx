@@ -26,11 +26,6 @@ const Page = () => {
   };
 
   useEffect(() => {
-    console.log(idNegara);
-    console.log(idPelabuhan);
-    console.log(idBarang);
-    console.log(formMethods.watch());
-
     queryClient.invalidateQueries({
       queryKey: ["barangs.id", idBarang],
     });
