@@ -25,6 +25,7 @@ const Page = () => {
     console.log(data);
   };
 
+  formMethods.watch(["harga", "diskon"]);
   useEffect(() => {
     queryClient.invalidateQueries({
       queryKey: ["barangs.id", idBarang],
